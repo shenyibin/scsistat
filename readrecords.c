@@ -84,7 +84,7 @@ int init_records(){
 		tmp->pstat = (perfstat_disk_t *)malloc(sizeof(perfstat_disk_t));
 		tmp->next = NULL;
 		//get the record name;
-		while((token = strtok(NULL, ",")) != NULL){
+		while((token = strtok(NULL, ", ")) != NULL){
 			struct node *tmpnode;
 			tmpnode = (struct node * )malloc(sizeof(struct node));
 			if(tmpnode==NULL) {
